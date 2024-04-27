@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PackingWindow</class>
+ <widget class="QMainWindow" name="PackingWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>957</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Packing</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.153, x2:0.549, y2:0.544909, stop:0 rgba(228, 228, 26, 230), stop:1 rgba(48, 227, 196, 234));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>10</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_casePic">
+        <property name="minimumSize">
+         <size>
+          <width>470</width>
+          <height>490</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>470</width>
+          <height>490</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>SobiraemChemodan/case2.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>10</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="0" colspan="3">
+         <widget class="QListWidget" name="recommenList">
+          <property name="font">
+           <font>
+            <pointsize>13</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(243, 243, 243, 200);
+border-radius: 8px;</string>
+          </property>
+          <property name="isWrapping" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="resizeMode">
+           <enum>QListView::Fixed</enum>
+          </property>
+          <property name="layoutMode">
+           <enum>QListView::SinglePass</enum>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>Цветом выделены оптимальные расположения:</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1. Обувь.</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>SobiraemChemodan/brownPoint.png</normaloff>SobiraemChemodan/brownPoint.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Обувь, брюки, все крупные и неформатные предметы лучше укладывать на дно и по краям чемодана.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2. Одежда, положенная на дно чемодана.</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>SobiraemChemodan/yellowPoint.png</normaloff>SobiraemChemodan/yellowPoint.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Середину чемодана лучше использовать для пакетов с одеждой полегче.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3. Одежда, свёрнутая в рулон.</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>SobiraemChemodan/greenPoint.png</normaloff>SobiraemChemodan/greenPoint.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Более плотная одежда, которая будет занимать меньше места, если сложить её рулоном, чем положить на дно чемодана.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4. Средства личной гигиены, лекарства.</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>SobiraemChemodan/redPoint.png</normaloff>SobiraemChemodan/redPoint.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Третьим слоем уложите легкие и тонкие вещи, туалетные принадлежности, косметичку, лекарства, а также то, что может понадобиться в первую очередь.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5. Хрупкие вещи.</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>SobiraemChemodan/purplePoint.png</normaloff>SobiraemChemodan/purplePoint.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Хрупкие предметылучше всего расположить по центру на мягких вещах.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6. Электронная техника.</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>SobiraemChemodan/grayPoint.png</normaloff>SobiraemChemodan/grayPoint.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Гаджеты лучше перевозить в специальных чехлах. Зарядные устройства для них спрячьте в боковые кармашки или распределите в пустоты, но так, чтобы к ним был свободный доступ.</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_listHead">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(243, 243, 243, 200);
+border-radius: 3px;</string>
+          </property>
+          <property name="text">
+           <string>Рекомендации по сборке багажа</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QPushButton" name="backButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>13</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(243, 243, 243, 200);
+border-radius: 3px;</string>
+          </property>
+          <property name="text">
+           <string>Назад</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="1">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>10</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="2">
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
